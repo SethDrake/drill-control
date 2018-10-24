@@ -2663,7 +2663,7 @@ design rules under a new name.</description>
 <element name="IC1" library="mc34063" package="SOIC8" value="MC34063AD" x="39.37" y="16.51" rot="R180"/>
 <element name="IC2" library="linear" package="DIL08" value="LM358N" x="24.13" y="16.51" rot="R180"/>
 <element name="JP1" library="pinhead" package="1X02" value="MOTOR" x="26.67" y="33.02" rot="R180"/>
-<element name="JP2" library="pinhead" package="1X02" value="POWER" x="2.54" y="11.43" rot="R90"/>
+<element name="JP2" library="pinhead" package="1X02" value="POWER" x="2.54" y="11.43" rot="R270"/>
 <element name="R1" library="resistor" package="R0805" value="1" x="33.02" y="6.35" rot="R90"/>
 <element name="R10" library="pot" package="CA6V" value="15k" x="8.89" y="5.08" rot="R90"/>
 <element name="R11" library="resistor" package="R0805" value="390" x="31.75" y="25.4"/>
@@ -2705,9 +2705,6 @@ design rules under a new name.</description>
 <wire x1="11.4456" y1="14.056" x2="15.06" y2="14.056" width="0.8" layer="1"/>
 <wire x1="15.06" y1="14.056" x2="15.24" y2="14.01" width="0.8" layer="1"/>
 <wire x1="11.4456" y1="14.056" x2="11.43" y2="13.97" width="0.8" layer="1"/>
-<wire x1="7.6304" y1="10.2408" x2="2.6104" y2="10.2408" width="0.8" layer="16"/>
-<wire x1="11.2448" y1="13.8552" x2="7.6304" y2="10.2408" width="0.8" layer="16"/>
-<wire x1="2.6104" y1="10.2408" x2="2.54" y2="10.16" width="0.8" layer="16"/>
 <wire x1="11.2448" y1="13.8552" x2="11.43" y2="13.97" width="0.8" layer="16"/>
 <wire x1="27.9112" y1="10.04" x2="27.9112" y2="12.6504" width="0.8" layer="16"/>
 <wire x1="26.104" y1="8.2328" x2="27.9112" y2="10.04" width="0.8" layer="16"/>
@@ -2715,6 +2712,8 @@ design rules under a new name.</description>
 <wire x1="11.6464" y1="13.6544" x2="17.068" y2="8.2328" width="0.8" layer="16"/>
 <wire x1="27.9112" y1="12.6504" x2="27.94" y2="12.7" width="0.8" layer="16"/>
 <wire x1="11.6464" y1="13.6544" x2="11.43" y2="13.97" width="0.8" layer="16"/>
+<wire x1="11.43" y1="13.97" x2="3.81" y2="13.97" width="0.8" layer="16"/>
+<wire x1="3.81" y1="13.97" x2="2.54" y2="12.7" width="0.8" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC1" pad="1"/>
@@ -2766,10 +2765,7 @@ design rules under a new name.</description>
 <wire x1="37.3488" y1="19.2768" x2="37.465" y2="19.11" width="0.8" layer="1"/>
 <wire x1="36.7464" y1="19.8792" x2="34.5376" y2="17.6704" width="0.8" layer="1"/>
 <wire x1="34.5376" y1="17.6704" x2="34.29" y2="17.46" width="0.8" layer="1"/>
-<wire x1="5.2208" y1="10.2408" x2="7.8312" y2="10.2408" width="0.8" layer="1"/>
-<wire x1="2.6104" y1="12.8512" x2="5.2208" y2="10.2408" width="0.8" layer="1"/>
-<wire x1="7.8312" y1="10.2408" x2="7.94" y2="10.16" width="0.8" layer="1"/>
-<wire x1="2.6104" y1="12.8512" x2="2.54" y2="12.7" width="0.8" layer="1"/>
+<wire x1="7.94" y1="10.16" x2="7.8312" y2="10.2408" width="0.8" layer="1"/>
 <wire x1="11.4456" y1="19.076" x2="15.06" y2="19.076" width="0.8" layer="1"/>
 <wire x1="15.06" y1="19.076" x2="15.24" y2="19.01" width="0.8" layer="1"/>
 <wire x1="11.4456" y1="19.076" x2="11.43" y2="19.05" width="0.8" layer="1"/>
@@ -2802,6 +2798,8 @@ design rules under a new name.</description>
 <wire x1="31.5256" y1="17.6704" x2="31.75" y2="17.46" width="0.8" layer="1"/>
 <via x="25.7024" y="25.7024" extent="1-16" drill="0.6096"/>
 <via x="31.5256" y="19.076" extent="1-16" drill="0.6096"/>
+<wire x1="2.54" y1="10.2408" x2="2.54" y2="10.16" width="0.8" layer="1"/>
+<wire x1="7.8312" y1="10.2408" x2="2.54" y2="10.2408" width="0.8" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="IC1" pad="3"/>
